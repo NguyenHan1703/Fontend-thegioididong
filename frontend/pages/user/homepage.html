@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">TheGioiDiDong</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-box" placeholder="Search for phones...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="header-icons">
+            <a href="login.html"><i class="fas fa-user"></i> Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart 
+                <span id="cart-count" class="cart-count"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="../../assets/images/banner.jpg" alt="Mobile Shop Banner">
+    </section>
+
+    <!-- Body -->
+    <main class="main-content">
+        <nav class="menu">
+            <button data-brand="iphone">iPhone</button>
+            <button data-brand="samsung">Samsung</button>
+            <button data-brand="xiaomi">Xiaomi</button>
+        </nav>
+        <section class="product-list" id="product-list">
+            <!-- Products will be loaded dynamically -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MobileShop. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/user/script.js"></script>
+</body>
+</html>

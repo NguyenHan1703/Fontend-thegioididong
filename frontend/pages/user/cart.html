@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">TheGioiDiDong</a>
+        </div>
+        <div class="header-icons">
+            <a href="login.html"><i class="fas fa-user"></i> Login</a>
+
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <main class="main-content">
+        <h1>Your Shopping Cart</h1>
+        <section class="cart-items">
+            <!-- Bảng hiển thị sản phẩm -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sản phẩm sẽ được hiển thị ở đây -->
+                </tbody>
+            </table>
+        </section>
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <button class="checkout-btn"><a href="../../pages/user/checkout.html">Thanh toán</a></button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MobileShop. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/user/cart.js"></script>
+</body>
+</html>

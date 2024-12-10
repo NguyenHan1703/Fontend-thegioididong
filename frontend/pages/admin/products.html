@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Products</title>
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="revenue.html">Revenue</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li><a href="manageCategories.html">Categories</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Product Management</h1>
+            </header>
+            <section class="product-management">
+                <button id="add-product-btn" class="btn">Add New Product</button>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="../../assets/js/admin/product.js"></script>
+</body>
+</html>

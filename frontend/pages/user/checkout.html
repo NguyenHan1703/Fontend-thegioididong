@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán điện thoại</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">TheGioiDiDong</a>
+        </div>
+    </header>
+
+    <main class="checkout">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <h2>Shipping Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required minlength="2" placeholder="Enter your full name">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" required placeholder="Enter your address">
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" required minlength="2" placeholder="Enter your city">
+            
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" required pattern="\d{5}" placeholder="Enter your postal code (5 digits)">
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" required minlength="2" placeholder="Enter your country">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required pattern="^\d{10}$" placeholder="Enter your phone number (10 digits)">
+            
+            <h2>Payment Information</h2>
+            <label for="payment-method">Payment Method:</label>
+            <input type="radio" name="payment" value="COD" checked> COD
+            <input type="radio" name="payment" value="Credit Card"> Credit Card
+            
+            <h2>Order Summary</h2>
+            <div id="order-summary">
+                <!-- Danh sách sản phẩm sẽ được hiển thị ở đây -->
+            </div>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MobileShop. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/user/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">TheGioiDiDong</a>
+        </div>
+        <div class="header-icons">
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart <span id="cart-count" class="cart-count"></span></a>
+        </div>
+    </header>
+
+    <main class="product-detail">
+        <div id="product-info">
+            <!-- Thông tin sản phẩm sẽ được hiển thị ở đây -->
+        </div>
+
+        <h2>Đánh giá sản phẩm</h2>
+        <div id="reviews">
+            <!-- Danh sách đánh giá sẽ được hiển thị ở đây -->
+        </div>
+        <form id="review-form">
+            <label for="review-text">Để lại đánh giá:</label>
+            <textarea id="review-text" required placeholder="Nhập đánh giá của bạn"></textarea>
+            <button type="submit">Gửi đánh giá</button>
+        </form>
+
+        <h2>Sản phẩm liên quan</h2>
+        <div id="related-products">
+            <!-- Sản phẩm liên quan sẽ được hiển thị ở đây -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MobileShop. All rights reserved.</p>
+    </footer>
+
+    <script src="../../assets/js/user/detailProduct.js"></script>
+</body>
+</html>
